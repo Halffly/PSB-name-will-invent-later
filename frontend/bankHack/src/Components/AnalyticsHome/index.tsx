@@ -27,7 +27,7 @@ const appsList: CardPrototype[] = [
     views: 200,
     rate: 4,
     imageUrl:
-      "https://images.unsplash.com/photo-1618508049606-5f07a78b758b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "https://www.psbank.ru/-/media/Files/Bank/Brand/PSB_logo_original_png.png",
   },
   {
     id: 0,
@@ -35,7 +35,7 @@ const appsList: CardPrototype[] = [
     views: 200,
     rate: 4,
     imageUrl:
-      "https://cdn.dribbble.com/users/653699/screenshots/15420052/media/7633ce9b2a3e532d4d47531e65541edd.png?compress=1&resize=1600x1200",
+      "https://www.psbank.ru/-/media/Files/Bank/Brand/PSB_logo_original_png.png",
   },
   {
     id: 0,
@@ -43,7 +43,7 @@ const appsList: CardPrototype[] = [
     views: 200,
     rate: 4,
     imageUrl:
-      "https://cdn.dribbble.com/users/5031392/screenshots/15489774/media/8013dbe688d425fbf8040ece0a49be4a.png?compress=1&resize=1600x1200",
+      "https://www.psbank.ru/-/media/Files/Bank/Brand/PSB_logo_original_png.png",
   },
   {
     id: 0,
@@ -51,7 +51,7 @@ const appsList: CardPrototype[] = [
     views: 200,
     rate: 4,
     imageUrl:
-      "https://cdn.dribbble.com/users/4189231/screenshots/15005457/media/82ddeeeca93f0a022ff77517294f711d.png?compress=1&resize=1600x1200",
+      "https://www.psbank.ru/-/media/Files/Bank/Brand/PSB_logo_original_png.png",
   },
   {
     id: 0,

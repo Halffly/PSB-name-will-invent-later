@@ -192,7 +192,7 @@ const CreateScreen = () => {
             <Box display="flex">
               <Box marginRight={3} marginTop={0.5}>
                 <Typography variant="h4" className={analyticClasses.headline}>
-                  Сценарии
+                  Сценарии и сборки
                 </Typography>
               </Box>
               <RoundedButton
@@ -201,9 +201,9 @@ const CreateScreen = () => {
                   setSteps([
                     ...steps,
                     {
-                      stepTitle: "Сценарий 1:«Поделиться историей»",
+                      stepTitle: "Сценарий 1:«Оформить кредит под 72% годовых »",
                       stepText:
-                        "В приложении 2ГИС воспользоваться функцией «Поделиться историей» на примере организации Google...",
+                        "В приложении 2ГИС воспользоваться функцией «Оформить кредит под 72% годовых » на примере организации Google...",
                       question: ["ВОпрос в конце"],
                       id: steps.length,
                     },

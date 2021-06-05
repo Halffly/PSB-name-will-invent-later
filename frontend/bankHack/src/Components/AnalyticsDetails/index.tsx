@@ -23,10 +23,8 @@ const AnalyticsDetails = () => {
   const [activeStep, setActiveStep] = React.useState(0);
   const analyticClasses = useAnalyticsPageStyles();
   const history = useHistory();
-  const [
-    prototypeData,
-    setPrototypeData,
-  ] = React.useState<FullAnalyticsPrototype>();
+  const [prototypeData, setPrototypeData] =
+    React.useState<FullAnalyticsPrototype>();
   const id = useParams<{ id: string }>()?.id;
   React.useEffect(() => {
     (async () => {
@@ -40,32 +38,20 @@ const AnalyticsDetails = () => {
             views: 20,
             rate: 4.3,
             imageUrl:
-              "https://cdn.dribbble.com/users/5031392/screenshots/15489774/media/8013dbe688d425fbf8040ece0a49be4a.png?compress=1&resize=1600x1200",
+              "https://www.psbank.ru/-/media/Files/Bank/Brand/PSB_logo_original_png.png",
             id: id,
             publicKey: "publicKey",
             steps: [
               {
                 id: 2,
-                stepTitle: "Поделиться историей",
-                stepText: `В приложении 2ГИС воспользоваться функцией «Поделиться историей» на примере организации Google.
-  
-  Шаги:
-  • Открыть приложение 2ГИС• Ввести в поиск «Google»
-  • В карточке организации в нижней части экрана нажать на кнопку «Поделиться»
-  • Выбрать приложение и адресата, отправить текст.
-  (Триггер завершения выполнения задания на устройстве.)`,
+                stepTitle: "Оформить кредит под 72% годовых ",
+                stepText: `Оформить кредит для студентов. Зайти с нулевым балансом. Проверить пополнения стипендией.`,
                 question: ["Заметил ли ты длину пути"],
               },
               {
                 id: 3,
-                stepTitle: "Поделиться историей",
-                stepText: `В приложении 2ГИС воспользоваться функцией «Поделиться историей» на примере организации Google.
-  
-  Шаги:
-  • Открыть приложение 2ГИС• Ввести в поиск «Google»
-  • В карточке организации в нижней части экрана нажать на кнопку «Поделиться»
-  • Выбрать приложение и адресата, отправить текст.
-  (Триггер завершения выполнения задания на устройстве.)`,
+                stepTitle: "Оформить кредит под 72% годовых ",
+                stepText: `Оформить кредит для студентов. Зайти с нулевым балансом. Проверить пополнения стипендией.`,
                 question: ["Заметил ли ты длину пути"],
               },
             ],
@@ -76,8 +62,8 @@ const AnalyticsDetails = () => {
               {
                 step: {
                   id: 2,
-                  stepTitle: "Поделиться историей",
-                  stepText: `В приложении 2ГИС воспользоваться функцией «Поделиться историей» на примере организации Google.
+                  stepTitle: "Оформить кредит под 72% годовых ",
+                  stepText: `В приложении 2ГИС воспользоваться функцией «Оформить кредит под 72% годовых » на примере организации Google.
   
     Шаги:
     • Открыть приложение 2ГИС• Ввести в поиск «Google»
@@ -103,8 +89,8 @@ const AnalyticsDetails = () => {
               {
                 step: {
                   id: 3,
-                  stepTitle: "Поделиться историей",
-                  stepText: `В приложении 2ГИС воспользоваться функцией «Поделиться историей» на примере организации Google.
+                  stepTitle: "Оформить кредит под 72% годовых ",
+                  stepText: `В приложении 2ГИС воспользоваться функцией «Оформить кредит под 72% годовых » на примере организации Google.
   
     Шаги:
     • Открыть приложение 2ГИС• Ввести в поиск «Google»
@@ -113,8 +99,7 @@ const AnalyticsDetails = () => {
     (Триггер завершения выполнения задания на устройстве.)`,
                   question: ["Заметил ли ты длину пути"],
                 },
-                analynics: 
-                [
+                analynics: [
                   {
                     title: "Оценка",
                     value: "3",
@@ -155,7 +140,7 @@ const AnalyticsDetails = () => {
           },
         });
     })();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   if (!prototypeData) {
     return <LinearProgress />;
@@ -187,9 +172,6 @@ const AnalyticsDetails = () => {
             {prototypeData.Data.description}
           </Typography>
           <Box display="flex" marginTop={"14px"}>
-            <RoundedButton style={{ marginRight: 16 }}>
-              Поделиться
-            </RoundedButton>
             <RoundedButton
               onClick={() => {
                 history.push(`/test/${prototypeData.Data.id}`);
@@ -201,7 +183,7 @@ const AnalyticsDetails = () => {
         </Grid>
         <Grid item xs={12}>
           <Typography variant="h4" className={analyticClasses.headline}>
-            Сценарии
+            Сценарии и сборки
           </Typography>
         </Grid>
         {prototypeData.Data.steps.map((step, index) => (
@@ -229,11 +211,6 @@ const AnalyticsDetails = () => {
             </Grid>
           )
         )}
-        <Grid item xs={12}>
-          <Typography variant="h4" className={analyticClasses.headline}>
-            Heatmaps сценария
-          </Typography>
-        </Grid>
         <Grid item xs={12}>
           <Typography variant="h4" className={analyticClasses.headline}>
             Результаты тестирования сценария
