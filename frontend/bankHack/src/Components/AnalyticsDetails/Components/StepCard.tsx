@@ -20,7 +20,7 @@ const StepCard = ({
         height: "100%",
         width: "100%",
         cursor: isFunction(onClick) ? "pointer" : undefined,
-        backgroundColor: isActive ? theme.palette.primary.main : "#EFEFEF",
+        backgroundColor: isActive ? "#2C2D84" : "#EFEFEF",
         color: isActive ? "#fff" : "#000",
       }}
       padding={2}
