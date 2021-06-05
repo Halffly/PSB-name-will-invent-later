@@ -1,10 +1,10 @@
 export const menuTabs = [
   {
-    label: "Добавить работу",
+    label: "Добавить",
     url: "/create",
   },
   {
-    label: "Галерея",
+    label: "QA",
     url: "/",
   },
   {
